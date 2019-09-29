@@ -1,0 +1,190 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% justifying text
+\usepackage{ragged2e} 
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Antonio}{Riccio}
+%\title{Young Graduate Trainee Application \#8572}                               % optional, remove / comment the line if not wanted
+%\address{\textbf{Young Graduate Trainee Application}}{\textbf{Req. ID 8572}}{\textbf{ESTEC}}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+39~(333)~325~7632}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+44~7724~799572}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{antonio.riccio.27@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.linkedin.com/in/antonioriccio/?locale=en\_US}                         % optional, remove / comment the line if not wanted
+\extrainfo{Computer Engineering | Industrial \& Embedded Systems}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with multiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+%PLACEHOLDERS
+\newcommand{\company}{\textbf{[company]}}
+\recipient{[COMPANY]}{}
+
+%\newcommand{\company}{CGI}
+%\recipient{\textbf{\company{}}}{14th Floor 20 Fenchurch Street\\ London\\ London\\ EC3M 3BY}
+%\recipient{\textbf{\company{}}}{The Office Park\\ Springfield Drive\\ Leatherhead\\ KT22 7LP}
+%\newcommand{\company}{MBDA}
+%\recipient{\textbf{\company{}}}{Six Hills Way\\ Springfield Drive\\ Stevenage\\ SG1 2DA}
+%\recipient{\textbf{\company{}}}{3 Golf Course Ln\\ Bristol\\ BS34 7QS}
+%\newcommand{\company}{QinetiQ}
+%\recipient{\textbf{\company{}}}{Malvern Technology Centre\\ St Andrew's Rd\\ Malvern\\ WR14 3PS}
+%\recipient{\textbf{\company{}}}{The Boulevard\\ Orbital Park\\ Ashford\\ TN240GA}
+%\newcommand{\company}{Critical Systems}
+%\recipient{\textbf{\company{}}}{4 Benham Road\\ Southampton Science Park Chilworth\\ Southampton\\ SO16 7QJ}
+
+%\recipient{Software Systems Division}{European Space Research \\and Technology Centre (ESTEC)\\Keplerlaan 1\\2201 AZ Noordwijk, Netherlands}
+%\recipient{Software Systems Division}{European Space Agency (ESA)\\Keplerlaan 1\\2201 AZ Noordwijk, Netherlands}
+
+%\date{December 16, 2018}
+\date{May 3, 2019}
+
+%\opening{Dear Mr. Fuchs,}
+%\opening{Dear Mr. Aries,}
+%\opening{Dear Mr. Mandalia,}
+%\opening{Dear Mrs. Quinn,}
+%\opening{Dear Mrs. Parker,}
+%\opening{Dear Mr. Rank,}
+
+\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+\justifying
+
+%[HOOK]
+Ever since I was a child, I used to inspect the sky with my telescope and imagine how wonderful and surprising it would be to reach those tiny points sparkling in the firmament. Several years have passed since then, but those nights still motivate me. Today, I have the chance to realise that desire and become, on again that euphoric and curious little boy that used to scrutinise the stars. 
+
+%[WHO ARE YOU?]
+%I am a fresh embedded engineer. Currently concluding the master’s thesis outlining methodologies to detect security menaces in the context of the Internet of Things (IoT). The thesis has been part of a collaboration with a research company, Montimage, with whom I conducted a 6-months internship. The activity was framed in the setting of the European project ANASTACIA. I foresee to graduate in January 2019.
+
+I am a fresh embedded engineer specialised in embedded and industrial systems. My master’s thesis outlined methodologies to detect security threats in the context of the Internet of Things (IoT). The thesis was part of a collaboration with a research company where I conducted a 6-month internship in Paris. The activity was framed in the setting of the European project ANASTACIA.  
+
+%[WHY DO YOU WANT TO WORK AT ESA?]
+%My goal is to commence a career in the space industry and the YGT would give me an incredible starting point, besides representing my home country. I want to learn from the best brains, work with them to enhance my knowledge and contribute to the space exploration towards Mars and beyond. Particularly, I love to contribute to building satellites, probes, and rockets, which would help humanity reaching new frontiers and new horizons.
+
+% Space industry
+%My intention is to commence a career in the space industry and working at \company{} would be an incredible starting point for me. I want to learn from the best minds, work with them to enhance my knowledge and contribute to the space exploration towards Mars and beyond. Particularly, I love to participate in building satellites, probes, and rockets, which would help humanity to reach new frontiers and new horizons. 
+
+% Safety-critical industry
+My intention is to commence a career in the safety-critical industry and working at \company{} would be an incredible starting point for me. I want to learn from the best minds, work with them to enhance my knowledge and contribute to obtain the best results.
+
+%[WHAT CAN YOU BRING TO ESA?]
+Besides the knowledge obtained during university, what I can bring is passion, commitment to work in a team embedded in a fervent, multicultural atmosphere. I will be supported by my curiosity, always enriching my knowledge in order to use it either for my team or for whoever needs it. I would surely bring my experience accumulated through the several projects I did during the academy and during the collaboration to the ANASTACIA project as well. 
+
+%I would love to discuss with you the opportunity of this application.\\ 
+%Meanwhile, I wish you all the best for your research activities.
+I would love to discuss with you an opportunity for employment.\\ 
+Meanwhile, I wish you all the best for your activities.
+
+\makeletterclosing
+
+%[WHY DO YOU WANT TO WORK AT ESA?]
+%I always wanted to be out there: exploring the universe, discovering new worlds and touching alien grounds. Be an explorer of the universe. Today I have the chance to do that, thanks to those amazing satellites and spaceships I would be honoured to contribute to build, and would allow me to be out there like the explorer I always dreamt to be. But, above all, what it is very important to me, is the chance to meet them, the real explorers, the astronauts. Meeting Samantha Cristoforetti, Paolo Nespoli and Luca Parmitano, talk about their space walkings, the days onboard of the ISS, the feelings inside the Soyouz. Thore are things only ESA could provide. 
+%Moreover, I feel very close to my Italian and European roots and I want to represent them, be proud of them. And I know ESA would allow me to express at the maximum these identities.
+
+
+% I want to contribuite building satellites, probes and rockets, in pursuing my objective, exploring the meanderings of the universe...  
+%I want to contribute to the adacencements of humantiy in discovery new borders, new frontiers proud to represent my country and my continent, therefore ESA is the thing that fits me
+%mettere a supporto la mia conoscenza in termini di sistemi embdedded safety-critical.
+
+
+%[WHAT CAN YOU BRING TO ESA?]
+%Being passinate in all concerning the Linux Kernel, 
+
+
+%My knowledge background embraces design of systems according to both functional and non-functional requirements. In particular, regarding the latter, I have acquired notions about techniques that provide reliability, security and safety. 
+%My knowledge background ranges from embedded systems to definition of system’s non-functional requirements. In particular, I worked with ARM-based ST Microelectronics STM32FX micro-controllers, on top on which I developed device drivers in several grades of abstraction: from bare-metal to BSP. I also wrote Linux Kernel modules to drive devices on top of Xilinx SoC, in particular, the Zynq7000 family. I have expertise in the design and implementation of digital systems through FPGAs and SoCs, in particular using Xilinx products. Last but not least, my knowledge comprises also fundamentals regarding techniques and procedures to asses risk and safety requirements like FMEA, fault trees and RBDs. Moreover, I have notions regarding computing Reliability, Availability and Maintainability of a system besides expertise in security as well.
+
+
+%CONSIGLIO: besides the knowledge and comptences acquired during university, I participated in several projects....
+%IDEA: "io sono metodico, preciso e attento a qualsiasi dettaglio, caratteristiche importanti (se non necessarie) nell'ambito della progettazione e sviluppo dei sistemi mission-critical"
+%In exchange, I am offering my expertise in ARM microcontrollers (ST Microelectronics), that I acquired during several university projects. My passion, working hard while fulfilling my tasks. My expertise in real-time operating systems (Linux RTAI, freeRTOS), and the Linux kernel, especially in device driver development, acquired during university projects also. My curiosity, continuously eager to learn new things. My knowledge of the French language which I learnt during my internship in France. My capacity of working in team, improved during the participation within ANASTACIA project, and problem solving, which I learned during a voluntary experience helping ERASMUS students. Friendliness, enjoying the cross-cultural environment by communicating and socializing with my colleagues, like I did during the several meetings I attended for the ANASTACIA EU project. 
+%My knowledge in verification and validation techniques for safety systems such as FMEA/FMECA, Reliability Block Diagrams (RBDs), fault trees and in reliability schemes such as TMRs and NMRs. 
+%My expertise in testing digital systems design through FPGAs and SoCs, especially from the Xilinx family. My communication skill I acquired during the presentations I made for the ANASTACIA project.
+
+
+%I just want to say I can offer something different, that’s not related to the academics result, but it’s more important: passion. Every challenge, every task, every experiment I will be given, it will be a thing in which I am going to dedicate all myself, and even if it’s a faliure, it would be a great source of notions that would help me do the things better and improve attempt after attempt. My goal is something greater, and that’s the key that would give all myself in whatever I do, because I know how is fantastic and emotional whatching those rockets flying on the skies and do their job, be the star on the stage.
+
+%[WHO ARE YOU?]
+%The dissertation work deals with the definition of an innovative strategy to address the detection of the vulnerabilities that affect the 'Internet of Things' architectures. In particular, the manuscript approaches to the problem related mainly on vulnerabilities that affect the communication level. The thesis activity has been pursued during a 6-months internship in Paris, France, working for a network security company.
+%This activity has been carried out within the ANASTACIA project, an EU Horizon2020 project that aims adopting innovative security techniques and diffused paradigms to enforce security in 'Internet of Things' and 'Cyber Physical Systems' environments. During this period I attended several plenary meetings, in one of them I presented, to all partners, the advancements of my work group. I also attended workshops about cybersecurity and 'Internet of Things', one has been held in the premise of Thales.
+%I am currently writing the master's thesis regarding security in IoT environments. The thesis activity has been supported by a 6-months internship in a network security company located in Paris, where I collaborated to an European project, named ANASTACIA, about enforcing security using SDN and NFV paradigms. During the project I participated in several plenary meeting and in one of them I presented to the partners about the advancements of my company. During the internship I participated also in a workshop held in the premise of Thales. 
+%I just completed that internship and finalising my dissertation. I foresee to defend it in the next months. I love read physics, especially the theory of relativity and quantum mechanics and I am passionate in astrophysics.
+
+%Aggiungi:
+% progettazione di critical systems attraverso FMEA
+% safe systems
+% realiability schemas
+
+%*******************************************************************************************************************************************************************************
+% NOTA: Pezzo da integrare con roba legata all'application
+
+%I always have hoped to give a contribute in the fields of ... ... and, above all, ... and ....
+
+%... with strong background on industrial and embedded systems. My knowledge background embrace design of systems according to both functional and non-functional requirements. In particular, regarding the latter, I have acquired notions about techniques that provide reliability, security and safety. 
+%Mostly, what I dream and look forward to do is collaborate with the astronauts on the ISS. Only speaking with them would be an honour, working with would be more than a pleasure. Moreover, they would try our experiments. That would fill me with proud and the sensation of being part of a great environment, a feeling that would be priceless.
+%*******************************************************************************************************************************************************************************
+
+%******************************************************************************************************************************************************************************************************************
+% NOTA: Ulteriori esperienze da aggiungere (in caso di necessità di testo) 
+
+%1)****************************************************************************************************************************************************************************************************************
+%I participated in several projects during the university, each one has been very useful for me not only for academic reasons but also because they allowed me to improve my abilities of working in group, solve problems. One of these projects aimed to develop a bistatic radar, a tool that would allow to discover the positions of the objects by using GNSS like Galileo and others. During this experience I led a team composed of three components. In particular, my team was given the task to design and develop the component whose aim is to synchronise with the reference satellite.
+%We worked in strict contact with another group in order to integrate each others work and testing the whole integration.
+
+%2)****************************************************************************************************************************************************************************************************************
+%When I came back to Naples I joined a volunteering association for helping Erasmus students coming from all Europe. During this epxerience I collaborated in organizing events, publicizing them using the social networks and leading small teams of people during the opening time os the associative office. Moreover, in this month I am going to start a 2 months EVS volunteering activity in Croatia with children and disables. I am going to live with other 9 people, all coming from different countries.
+
+%******************************************************************************************************************************************************************************************************************
+
+
+%*******************************************************************************************************************************************************************************
+% NOTA: Ulteriori motivazioni da integrare
+
+%[…]è un pò come parlare di un film: tutti si ricordano degli attori più importanti o del regista ma difficilmente viene ricordata l’identità delle migliaia di persone che, in anonimato, hanno contribuito alla riuscita del prodotto finale.  Ecco, così immagino il mio contributo: partecipare ad un grande progetto, rimanendo “dietro le quinte” ma orgoglioso e contento di aver dato un contributo tangibile ad un qualcosa di importante e significativo.
+
+%The reasons I wanto to join the ESA YGT are endless. I would like to pick the one that I remember the most. That reason is more a vision than a reason in the strict sense. What I dream is to stay in the control room, looking at the different stages of the flight. I meant no to be one of the guys in front of a console, controlling mission parameters. I just want to stay in the control room and observe the mission going on smootly, amaze myself watching separating the different stages and be proud once the ship would reach the open space. Then I can shake hands with my colleagues and go out and come back at home with the heart full of happiness, but above all,  of realization  and proud to have been part in something big, something incredible, without be necessarily the star. Because the real star are the astronauts, but above all, the ships upon which they are travelling ;)
+%*******************************************************************************************************************************************************************************
+
+\end{document}

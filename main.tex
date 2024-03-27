@@ -4,84 +4,59 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[12pt,a4paper,sans]{moderncv}                                                     % font size ('10pt', '11pt' and '12pt')
-                                                                                                    % paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape')
-                                                                                                    % font family ('sans' and 'roman')
-\usepackage[utf8]{inputenc}                                                                     % character encoding: if you are not using xelatex ou lualatex, replace by the encoding you are using
-\usepackage{ragged2e}                                                                           % justifying text
-\usepackage[scale=0.85]{geometry}                                                               % adjust the page margins
+\documentclass[12pt,a4paper,sans]{moderncv} % font size ('10pt', '11pt' and '12pt')
+                                            % paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape')
+                                            % font family ('sans' and 'roman')
+\usepackage[utf8]{inputenc}                 % character encoding: if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{ragged2e}                       % justifying text
+\usepackage[scale=0.85]{geometry}           % adjust the page margins
 
-%----------------------------------------------------------------------------------
-% bibliography
-%----------------------------------------------------------------------------------
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}                            % to show numerical labels in the bibliography (default is to show no labels);
-                                                                                                %  only useful if you make citations in your resume
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}                                      % CONSIDER REPLACING THE ABOVE BY THIS
-
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}                                                         % bibliography with multiple entries
 
 %----------------------------------------------------------------------------------
 % layout configuration
 %----------------------------------------------------------------------------------
-\moderncvstyle{banking}                                                                         % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                                                                           % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}                                                      % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                                                                % uncomment to suppress automatic page numbering for CVs longer than one page
-
-%\setlength{\hintscolumnwidth}{3cm}                                                             % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}                                                        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks.
-                                                                                                    % be careful though, the length is normally calculated to avoid any overlap with your personal info;
-                                                                                                    % use this at your own typographical risks...
+\moderncvstyle{banking}  % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}    % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}  % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                            % uncomment to suppress automatic page numbering for CVs longer than one page
+%\setlength{\hintscolumnwidth}{3cm}         % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}    % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks.
+                                            % be careful though, the length is normally calculated to avoid any overlap with your personal info;
+                                            % use this at your own typographical risks...
 
 %----------------------------------------------------------------------------------
 % personal data
 %----------------------------------------------------------------------------------
 \name{Antonio}{Riccio}
-%\title{Young Graduate Trainee Application \#8572}                                               % optional, remove / comment the line if not wanted
-%\address{\textbf{Young Graduate Trainee Application}}{\textbf{Req. ID 8572}}{\textbf{ESTEC}}    % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\title{Young Graduate Trainee Application \#8572}
+%\address{\textbf{Young Graduate Trainee Application}}{\textbf{Req. ID 8572}}{\textbf{ESTEC}}
 \phone[mobile]{+49~151~56893596}
-% \phone[mobile]{+44~7724~799572}                                                                 % optional, remove / comment the line if not wanted
-%\phone[fixed]{+39~(081)~5435406}                                                                 % optional, remove / comment the line if not wanted
-%\phone[fax]{+39~(081)~5435406}                                                                   % optional, remove / comment the line if not wanted
-% \email{antonio.riccio.27+work@gmail.com}                                                        % optional, remove / comment the line if not wanted
-\email{ariccio.careers@outlook.com}                                                             % optional, remove / comment the line if not wanted
-\homepage{www.linkedin.com/in/antonioriccio}                                                    % optional, remove / comment the line if not wanted
-\extrainfo{Computer Engineering | Industrial \& Embedded Systems}                               % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                                                                    % optional, remove / comment the line if not wanted;
-                                                                                                    % 64pt is the height the picture must be resized to
-                                                                                                    % 0.4pt is the thickness of the frame around it (put it to 0pt for no frame)
-                                                                                                    % picture is the name of the picture file
-\quote{Some quote}                                                                              % optional, remove / comment the line if not wanted
+\email{careers@ariccio.me}
+% \homepage{www.linkedin.com/in/antonioriccio}
+\extrainfo{Embedded Systems Engineer}
 
 %----------------------------------------------------------------------------------
 % letter
 %----------------------------------------------------------------------------------
-\begin{document}
-\recipient{Philotech Systementwicklung und Software GmbH}{Eschenstrasse 2\\82024 Taufkirchen\\Germany}
-\date{Friday, February 03rd, 2023}
-\opening{Dear Mr. Wolfram Schorr,}
-%\enclosure[Attached]{curriculum vit\ae{}}                                                       % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\recipient{Company GmbH}{Strasse 27\\81667 Munich\\Germany}
+\date{Monday, January 01st, 2024}
+\opening{Dear Mr. John Doe,}
+\enclosure[Attached]{curriculum vit\ae{}}
+% use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \closing{Yours sincerely,}
+
+\begin{document}
 \makelettertitle
+
 \justifying
-\vspace{0,5 cm}
 
-Please accept this letter to notice my resignation as Software Engineer position at Philotech Systementwicklung und Software GmbH.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget auctor nisi. Sed pellentesque dolor in ex dictum aliquet ac vel tellus. Vestibulum porta, ex sit amet varius pellentesque, magna urna dignissim nibh, eleifend scelerisque risus metus sit amet tellus. Aenean sed urna sed lectus euismod tincidunt. Proin aliquam est quis mauris rhoncus, vel egestas velit suscipit. Praesent quis dignissim leo. Phasellus vehicula enim ligula, ut fringilla ligula efficitur ut. Duis consequat urna risus, at congue ligula blandit et. Donec in nibh in ligula pretium laoreet ac sit amet nunc.
 
-\vspace{0,5 cm}
+Vivamus laoreet nec tellus nec tempus. Morbi faucibus ipsum cursus mauris lacinia lacinia. In ut tincidunt magna. Sed vehicula magna condimentum ante venenatis, vel gravida dui dignissim. Sed tempor eros eu est sollicitudin molestie. Sed id tellus leo. Quisque rutrum arcu ac nibh porttitor lacinia. Nullam quis elit dolor. Vestibulum mattis mollis libero, quis egestas urna suscipit tincidunt.
 
-As per terms of my employment contract, I give three (3) month’s notice, completing my employment on \textbf{Apr 28th 2023}.
+Vivamus nec purus suscipit, facilisis ex a, suscipit felis. Donec consequat tortor quis tortor mattis posuere id vitae dolor. Maecenas suscipit placerat enim. Sed fringilla mauris massa. Aenean imperdiet pulvinar semper. Curabitur consectetur vel mauris ac suscipit. Cras ultrices augue sed metus facilisis ornare. Nulla sed efficitur sapien, nec efficitur nisl. Donec non massa mauris. Ut dapibus velit ut mi dignissim, sit amet bibendum augue placerat. Maecenas aliquam orci id ullamcorper condimentum. Vivamus vitae odio consequat eros lobortis aliquet sed quis lectus.
 
-\vspace{0,5 cm}
+Fusce rutrum, ex nec luctus eleifend, orci est placerat turpis, sed finibus nulla est at magna. Pellentesque maximus pretium turpis molestie lobortis. Donec maximus enim quis felis volutpat tincidunt. Donec mattis volutpat ultrices. Curabitur sed ipsum quis quam pretium mollis. Etiam scelerisque leo at ex porta commodo. Maecenas quis elit nisl. Ut dignissim nunc felis, eget mollis nulla sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sodales felis non felis auctor, sit amet volutpat risus fermentum. Nullam consectetur, enim quis suscipit dictum, nunc ex aliquet urna, ut pharetra augue urna sed ipsum. Nullam vel diam sed libero ornare condimentum in at lectus. Nulla quis egestas nibh, quis gravida elit. Sed aliquam nunc in tincidunt mattis.
 
-I enjoyed being a part of the team, and I am thankful for the opportunities I have been given during my time here. I will continue to offer my performances with the same professionalism and integrity which characterised my activity so far. If there are any areas you would like me to focus on during my notice period; please do let me know.
-\vspace{1 cm}
-
-I wish Philotech all the best for future business activities.
-
-\vspace{1 cm}
 \makeletterclosing
 \end{document}

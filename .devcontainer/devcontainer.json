@@ -1,0 +1,13 @@
+{
+  "name": "TeX Live base",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+            "james-yu.latex-workshop",
+            "yzhang.markdown-all-in-one",
+            "redhat.vscode-yaml"
+          ]
+      }
+  }
+}

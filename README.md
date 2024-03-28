@@ -1,4 +1,4 @@
-# My LaTeX CV Repository
+# My LaTeX CL Repository
 
 This repository contains the LaTeX code for my cover letter.
 

@@ -5,7 +5,7 @@ SRC_DIR = .
 BUILD_DIR = build
 
 # LaTeX compiler
-LATEX_COMPILER = pdflatex
+LATEX_COMPILER = xelatex
 
 # LaTeX source files
 TEX_FILES = $(wildcard $(SRC_DIR)/*.tex)

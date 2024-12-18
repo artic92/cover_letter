@@ -1,7 +1,9 @@
-name: Compile LaTeX
+name: Compile LaTeX and Create Release with PDF
 
 on:
   push:
+    tags:
+      - '*'
 
 jobs:
   build:
@@ -22,12 +24,32 @@ jobs:
         docker run --rm \
           --volume ${{ github.workspace }}:/latex \
           latex-compiler /bin/bash -c \
-          "cd /latex && make clean && make"
+          "cd /latex && make clean && make && chown -R $(id -u):$(id -g) build"
 
-    - name: Archive PDF artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: output-pdf
-        path: ./build/main.pdf
+    - name: Extract tag name
+      id: get_tag
+      run: echo "TAG_NAME=${GITHUB_REF##*/}" >> $GITHUB_ENV
+
+    - name: Rename output PDF
+      run: mv ./build/ariccio_cl.pdf ./build/ariccio_cl_${{ env.TAG_NAME }}.pdf
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
       env:
-        node-version: '20'
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.TAG_NAME }}
+        release_name: Release ${{ env.TAG_NAME }}
+        body: |
+          Describe your release here.
+
+    - name: Upload PDF as Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./build/ariccio_cl_${{ env.TAG_NAME }}.pdf
+        asset_name: ariccio_cl_${{ env.TAG_NAME }}.pdf
+        asset_content_type: application/pdf

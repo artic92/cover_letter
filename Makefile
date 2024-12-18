@@ -12,7 +12,7 @@ TEX_FILES = $(wildcard $(SRC_DIR)/*.tex)
 CLS_FILES = $(wildcard $(SRC_DIR)/*.cls)
 
 # Output PDF file
-OUTPUT_PDF = $(BUILD_DIR)/main.pdf
+OUTPUT_PDF = $(BUILD_DIR)/ariccio_cl.pdf
 
 # Default target
 all: $(OUTPUT_PDF)
